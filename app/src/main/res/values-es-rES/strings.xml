@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Divide Cuentas</string>
+    <string name="quantity">Cantidad</string>
+    <string name="people">Comensales</string>
+    <string name="Round_tip">Redondear Propina</string>
+    <string name="calculate">Calcular</string>
+    <string name="appreciation">Valoración</string>
+    <string name="total_quantity">Cantidad Total:</string>
+    <string name="each_quantity">Cada uno:</string>
+</resources>

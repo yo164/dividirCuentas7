@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">dividirCuentas7</string>
+    <string name="quantity">Quantity</string>
+    <string name="people">People</string>
+    <string name="Round_tip">Round Tip</string>
+    <string name="calculate">Calculate</string>
+    <string name="appreciation">Rating</string>
+    <string name="total_quantity">Total Quantity:</string>
+    <string name="each_quantity">Each:</string>
+</resources>
