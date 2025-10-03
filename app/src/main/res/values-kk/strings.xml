@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Шотты бөлу</string>
+    <string name="quantity">Сома</string>
+    <string name="people">Адам саны</string>
+    <string name="Round_tip">Шайды дөңгелектеу</string>
+    <string name="calculate">Есептеу</string>
+    <string name="appreciation">Бағалау</string>
+    <string name="total_quantity">Жалпы сома:</string>
+    <string name="each_quantity">Әрқайсысына:</string>
+</resources>

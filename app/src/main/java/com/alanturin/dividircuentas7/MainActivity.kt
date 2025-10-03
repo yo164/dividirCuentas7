@@ -5,6 +5,7 @@ import android.widget.Space
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -15,6 +16,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Switch
@@ -27,6 +29,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 
 import androidx.compose.ui.text.input.KeyboardType
@@ -51,9 +54,11 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier
                             .padding(innerPadding)
                             .padding(16.dp)
-
                     ) {
+                        Text( stringResource(R.string.app_name))
+                        Spacer(modifier = Modifier.height(24.dp))
                         TextField(
+                            modifier = Modifier.fillMaxWidth(),
                             value = cuenta,
                             onValueChange = {cuenta = it},
                             label = {Text (stringResource(R.string.quantity))},
@@ -61,6 +66,7 @@ class MainActivity : ComponentActivity() {
                         )
                         Spacer(modifier = Modifier.height(24.dp))
                         TextField(
+                            modifier = Modifier.fillMaxWidth(),
                             value = comensales,
                             onValueChange = {comensales = it},
                             label = {Text(stringResource(R.string.people))},
@@ -68,7 +74,9 @@ class MainActivity : ComponentActivity() {
                         )
                         Spacer(modifier = Modifier.height(24.dp))
                         Row (
-                            verticalAlignment = Alignment.CenterVertically
+                            modifier = Modifier.fillMaxWidth(),
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.SpaceBetween
                         ){
                             Text(
                                 stringResource(R.string.Round_tip)
@@ -129,7 +137,14 @@ class MainActivity : ComponentActivity() {
                             mostrarResultado = true
 
                         }) {
-                            Text(stringResource(R.string.calculate))
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Icon(painterResource(R.drawable.functions_24px),"Sigma" )
+                                Spacer(modifier = Modifier.width(8.dp))
+
+                                Text(stringResource(R.string.calculate))
+                            }
                         }
                         Spacer(modifier = Modifier.height(24.dp))
 
