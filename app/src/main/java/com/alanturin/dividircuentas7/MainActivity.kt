@@ -95,7 +95,7 @@ class MainActivity : ComponentActivity() {
                         }
 
                         Spacer(modifier = Modifier.height(24.dp))
-
+                        Text (stringResource(R.string.appreciation))
                         if (checked){
                             Slider(
                                 value = sliderPosition,
@@ -104,7 +104,7 @@ class MainActivity : ComponentActivity() {
                                 steps = 4
                             )
                             Text(
-                                text = sliderPosition.toInt().toString()
+                                text = (sliderPosition*5).toInt().toString() + " %"
                             )
                         } else{
                             Slider(

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string name="app_name">계산 분할</string>
+    <string name="quantity">금액</string>
+    <string name="people">인원수</string>
+    <string name="Round_tip">팁 반올림</string>
+    <string name="calculate">계산하기</string>
+    <string name="appreciation">평가</string>
+    <string name="total_quantity">총 금액:</string>
+    <string name="each_quantity">각자:</string>
 </resources>
